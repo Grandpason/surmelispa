@@ -93,6 +93,7 @@
             </a>
             <nav class="hidden md:flex items-center space-x-10">
                 <a href="#hizmetler" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Hizmetler</a>
+                <a href="#fiyatlar" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Fiyatlar</a>
                 <a href="#lokasyon" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Lokasyon</a>
                 <a href="#iletisim" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">İletişim</a>
             </nav>
@@ -113,6 +114,7 @@
     <div id="mobile-menu" class="md:hidden hidden bg-spa-darker/98 backdrop-blur-xl border-t border-spa-accent/10">
         <div class="px-6 py-8 flex flex-col gap-6">
             <a href="#hizmetler" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Hizmetler</a>
+            <a href="#fiyatlar" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Fiyatlar</a>
             <a href="#lokasyon" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Lokasyon</a>
             <a href="#iletisim" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">İletişim</a>
             <a href="tel:+905305153770" class="text-spa-accent-light text-sm tracking-widest mt-4">0530 515 37 70</a>
@@ -152,49 +154,182 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Klasik Masaj -->
             <div class="group cursor-pointer fade-up">
                 <div class="relative w-full aspect-[3/4] overflow-hidden rounded-sm mb-6 service-img-wrapper">
-                    <img src="assets/images/isvec-masaji.png" alt="İsveç Masajı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="assets/images/isvec-masaji.png" alt="Klasik Masaj" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="flex justify-between items-baseline mb-3 border-b border-spa-accent/20 pb-3">
-                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">İsveç Masajı</h3>
-                    <span class="text-spa-accent-light text-xs tracking-widest">60 / 90 DK</span>
+                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Klasik Masaj</h3>
+                    <span class="text-spa-accent-light text-xs tracking-widest">45 DK</span>
                 </div>
-                <p class="text-spa-muted font-light text-sm leading-relaxed">Klasik Avrupa tekniği ile kas gerginliğini çözen, kan dolaşımını hızlandıran rahatlatıcı dokunuş.</p>
+                <p class="text-spa-muted font-light text-sm leading-relaxed mb-2">Klasik masaj tekniği ile kas gerginliğini çözen, kan dolaşımını hızlandıran rahatlatıcı dokunuş.</p>
+                <span class="inline-block text-xs bg-spa-deep text-spa-accent-light px-2 py-1 rounded font-medium border border-spa-accent/20">+15 Dk Hamam, Kese & Köpük Hediye!</span>
             </div>
 
+            <!-- Medical Masaj -->
             <div class="group cursor-pointer fade-up">
                 <div class="relative w-full aspect-[3/4] overflow-hidden rounded-sm mb-6 service-img-wrapper">
-                    <img src="assets/images/sicak-tas.png" alt="Sıcak Taş Terapisi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="assets/images/sicak-tas.png" alt="Medical Masaj" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="flex justify-between items-baseline mb-3 border-b border-spa-accent/20 pb-3">
-                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Sıcak Taş Terapisi</h3>
-                    <span class="text-spa-accent-light text-xs tracking-widest">75 DK</span>
+                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Medical Masaj</h3>
+                    <span class="text-spa-accent-light text-xs tracking-widest">45 DK</span>
                 </div>
-                <p class="text-spa-muted font-light text-sm leading-relaxed">Isıtılmış volkanik bazalt taşlarının topraklayıcı enerjisiyle derin kas gevşemesi.</p>
+                <p class="text-spa-muted font-light text-sm leading-relaxed mb-2">Kas ağrılarını ve vücut yorgunluğunu dindiren, tıbbi anatomi temelli derin doku masajı.</p>
+                <span class="inline-block text-xs bg-spa-deep text-spa-accent-light px-2 py-1 rounded font-medium border border-spa-accent/20">+15 Dk Hamam, Kese & Köpük Hediye!</span>
             </div>
 
+            <!-- Aroma Terapi Masajı -->
             <div class="group cursor-pointer fade-up">
                 <div class="relative w-full aspect-[3/4] overflow-hidden rounded-sm mb-6 service-img-wrapper">
-                    <img src="assets/images/aromaterapi.png" alt="Aromaterapi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="assets/images/aromaterapi.png" alt="Aroma Terapi Masajı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="flex justify-between items-baseline mb-3 border-b border-spa-accent/20 pb-3">
-                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Aromaterapi</h3>
-                    <span class="text-spa-accent-light text-xs tracking-widest">60 DK</span>
+                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Aroma Terapi Masajı</h3>
+                    <span class="text-spa-accent-light text-xs tracking-widest">45 DK</span>
                 </div>
-                <p class="text-spa-muted font-light text-sm leading-relaxed">Lavanta, ylang-ylang ve okaliptüs uçucu yağlarıyla duyusal arınma seansı.</p>
+                <p class="text-spa-muted font-light text-sm leading-relaxed mb-2">Bitkisel öz yağlar eşliğinde, zihinsel sakinlik ve bedensel hafiflik kazandıran terapi.</p>
+                <span class="inline-block text-xs bg-spa-deep text-spa-accent-light px-2 py-1 rounded font-medium border border-spa-accent/20">+15 Dk Hamam, Kese & Köpük Hediye!</span>
             </div>
 
+            <!-- Geleneksel Bali Masajı -->
             <div class="group cursor-pointer fade-up">
                 <div class="relative w-full aspect-[3/4] overflow-hidden rounded-sm mb-6 service-img-wrapper">
-                    <img src="assets/images/turk-hamami.png" alt="Geleneksel Hamam" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="assets/images/turk-hamami.png" alt="Geleneksel Bali Masajı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="flex justify-between items-baseline mb-3 border-b border-spa-accent/20 pb-3">
-                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Geleneksel Hamam</h3>
-                    <span class="text-spa-accent-light text-xs tracking-widest">90 DK</span>
+                    <h3 class="text-2xl font-serif text-white group-hover:text-spa-accent-light transition-colors">Bali Masajı</h3>
+                    <span class="text-spa-accent-light text-xs tracking-widest">45 DK</span>
                 </div>
-                <p class="text-spa-muted font-light text-sm leading-relaxed">Göbektaşı, kese, köpük masajı ve sauna ile kadim Türk arınma ritüeli.</p>
+                <p class="text-spa-muted font-light text-sm leading-relaxed mb-2">Uzak Doğu'nun mistik dokunuşlarıyla enerji noktalarını dengeleyen canlandırıcı masaj.</p>
+                <span class="inline-block text-xs bg-spa-deep text-spa-accent-light px-2 py-1 rounded font-medium border border-spa-accent/20">+15 Dk Hamam, Kese & Köpük Hediye!</span>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fiyatlar -->
+<section id="fiyatlar" class="py-32 bg-spa-dark border-t border-spa-deep/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 fade-up">
+            <span class="text-spa-accent-light text-xs tracking-[.4em] uppercase font-semibold mb-6 block">Fiyat Listesi</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-white mb-6">Şımartıcı Deneyimler & <span class="italic text-spa-accent-light">Fiyatlar</span></h2>
+            <div class="inline-flex items-center gap-3 bg-spa-deep/60 border border-spa-accent/30 rounded-full px-6 py-2.5 mt-4 text-spa-cream text-sm md:text-base font-semibold shadow-lg">
+                <span class="flex h-2.5 w-2.5 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-spa-accent opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-spa-accent-light"></span>
+                </span>
+                🎁 Kampanya: Tüm 45 Dk Masajlarımıza +15 Dk Hamam Kese Köpük Dahildir!
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <!-- Standart Masajlar Listesi -->
+            <div class="lg:col-span-2 space-y-6 fade-up">
+                <div class="bg-spa-darker/60 backdrop-blur-md border border-spa-accent/10 rounded-xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-serif text-white mb-8 border-b border-spa-accent/10 pb-4 flex items-center justify-between">
+                        <span>Terapötik Masajlar</span>
+                        <span class="text-xs text-spa-muted font-sans tracking-wider uppercase">Süre: 45 Dk</span>
+                    </h3>
+                    <div class="divide-y divide-spa-accent/5">
+                        <!-- Klasik Masaj -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">💆‍♀️ Klasik Masaj</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">2500 ₺</span>
+                        </div>
+                        <!-- Medical Masaj -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">🧖‍♂️ Medical Masaj</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">3200 ₺</span>
+                        </div>
+                        <!-- Aroma Terapi Masajı -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">🌸 Aroma Terapi Masajı</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">3000 ₺</span>
+                        </div>
+                        <!-- Mix Masajı -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">💫 Mix Masajı</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">4500 ₺</span>
+                        </div>
+                        <!-- Geleneksel Bali Masajı -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">🌺 Geleneksel Bali Masajı</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">3500 ₺</span>
+                        </div>
+                        <!-- Mandara Sultan Masajı -->
+                        <div class="py-5 flex justify-between items-center group">
+                            <div>
+                                <h4 class="text-lg font-semibold text-spa-cream group-hover:text-spa-accent-light transition-colors">👑 Mandara Sultan Masajı</h4>
+                                <p class="text-xs text-spa-muted mt-1">+15 dk Hamam Kese Köpük Hediye</p>
+                            </div>
+                            <span class="text-xl font-bold text-spa-accent-light">5000 ₺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIP Paketler -->
+            <div class="space-y-6 fade-up">
+                <div class="bg-gradient-to-br from-spa-deep to-spa-darker border-2 border-spa-accent/30 rounded-xl p-8 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-16 -top-16 w-32 h-32 bg-spa-accent/10 rounded-full blur-2xl"></div>
+                    <span class="bg-spa-accent text-white text-[10px] tracking-widest uppercase font-bold px-3 py-1 rounded-full absolute top-6 right-6">EN POPÜLER</span>
+                    
+                    <h3 class="text-2xl font-serif text-white mb-2">VIP Masaj Paketimiz</h3>
+                    <p class="text-spa-accent-light font-medium text-3xl mb-6">7500 ₺</p>
+                    
+                    <ul class="space-y-4 mb-8 text-spa-cream/90 text-sm">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-spa-accent-light shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            60 Dk Profesyonel Masaj
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-spa-accent-light shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            30 Dk Jakuzi Keyfi
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-spa-accent-light shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Kese & Köpük Terapisi
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-spa-accent-light shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Sıcak ve Soğuk İkramlar
+                        </li>
+                    </ul>
+                    
+                    <a href="https://wa.me/905305153770" target="_blank" class="block text-center bg-spa-accent hover:bg-spa-accent-light text-white font-medium py-3 rounded-lg transition-colors text-sm tracking-wider uppercase">WhatsApp'tan Randevu Al</a>
+                </div>
+
+                <div class="bg-spa-darker/60 backdrop-blur-md border border-spa-accent/10 rounded-xl p-8 shadow-xl">
+                    <h3 class="text-xl font-serif text-white mb-2">VIP Masaj + Köpük Masajı</h3>
+                    <p class="text-spa-accent-light font-medium text-2xl mb-4">10000 ₺</p>
+                    <p class="text-xs text-spa-muted leading-relaxed mb-6">VIP paket içeriğine ek olarak, geleneksel Türk hamamında köpük masajı seansını da içeren en kapsamlı deneyimimiz.</p>
+                    <a href="https://wa.me/905305153770" target="_blank" class="block text-center border border-spa-accent text-spa-accent-light hover:bg-spa-accent/10 font-medium py-2.5 rounded-lg transition-colors text-xs tracking-wider uppercase">Detaylı Bilgi Al</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bilgi Notu -->
+        <div class="mt-16 bg-spa-deep/20 border border-spa-accent/15 rounded-lg p-6 text-center max-w-3xl mx-auto fade-up">
+            <p class="text-spa-cream text-sm md:text-base font-light leading-relaxed">
+                ✨ <span class="font-medium text-spa-accent-light">Önemli Bilgilendirme:</span> Tüm masajlarımız profesyonel bayan masöz arkadaşlarımız tarafından uygulanmaktadır. Hijyenik ve huzurlu bir ortamda hizmet almanız bizim için en büyük önceliktir.
+            </p>
         </div>
     </div>
 </section>
