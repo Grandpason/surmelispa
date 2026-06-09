@@ -78,6 +78,20 @@
         .nav-scrolled{background:rgba(11,10,31,.97)!important;box-shadow:0 2px 30px rgba(124,58,237,.12)}
         .service-img-wrapper::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,31,.9) 0%,rgba(11,10,31,0) 50%)}
         section[id]{scroll-margin-top:6rem}
+        @keyframes stonePulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+        @keyframes stoneShake {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            20% { transform: translate(-2px, 2px) rotate(-1deg); }
+            40% { transform: translate(2px, -2px) rotate(1deg); }
+            60% { transform: translate(-2px, -2px) rotate(-1deg); }
+            80% { transform: translate(2px, 2px) rotate(1deg); }
+        }
+        .animate-pulse-stone { animation: stonePulse 0.3s ease-out; }
+        .animate-shake-stone { animation: stoneShake 0.2s ease-in-out; }
     </style>
 </head>
 <body class="bg-spa-dark text-spa-cream antialiased font-sans">
@@ -96,6 +110,7 @@
             <nav class="hidden md:flex items-center space-x-10">
                 <a href="#hizmetler" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Hizmetler</a>
                 <a href="#fiyatlar" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Fiyatlar</a>
+                <a href="#oyun" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300 text-spa-accent-light">İndirim Kazan</a>
                 <a href="#lokasyon" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">Lokasyon</a>
                 <a href="#iletisim" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors duration-300">İletişim</a>
             </nav>
@@ -117,6 +132,7 @@
         <div class="px-6 py-8 flex flex-col gap-6">
             <a href="#hizmetler" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Hizmetler</a>
             <a href="#fiyatlar" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Fiyatlar</a>
+            <a href="#oyun" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors text-spa-accent-light">İndirim Kazan</a>
             <a href="#lokasyon" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Lokasyon</a>
             <a href="#iletisim" class="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">İletişim</a>
             <a href="tel:+905305153770" class="text-spa-accent-light text-sm tracking-widest mt-4">0530 515 37 70</a>
@@ -354,6 +370,79 @@
     </div>
 </section>
 
+<!-- Oyun Oyna & İndirim Kazan -->
+<section id="oyun" class="py-32 bg-spa-dark border-t border-spa-deep/30 overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <span class="text-spa-accent-light text-xs tracking-[.4em] uppercase font-semibold mb-6 block">Etkileşimli Rahatlama</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-white mb-6">Oyun Oyna & <span class="italic text-spa-accent-light">İndirim Kazan</span></h2>
+        <p class="text-spa-muted text-sm md:text-base max-w-xl mx-auto mb-12 font-light">
+            Ekranda parıldayan mistik spa taşına dokunarak negatif enerjiden arının. Her dokunuşta derinleşen meditasyon tınıları eşliğinde 20 adıma ulaştığınızda özel indirim kodunuz hazır olacak.
+        </p>
+
+        <!-- Oyun Alanı -->
+        <div class="relative max-w-md mx-auto bg-spa-darker/50 border border-spa-accent/15 rounded-2xl p-8 shadow-xl backdrop-blur-sm min-h-[350px] flex flex-col justify-between items-center overflow-hidden">
+            
+            <!-- Adım Sayacı -->
+            <div id="game-status" class="w-full flex justify-between items-center text-xs tracking-wider uppercase text-spa-muted font-medium mb-4">
+                <span>Rahatlama Seviyesi</span>
+                <span id="click-count">0 / 20</span>
+            </div>
+            
+            <!-- İlerleme Çubuğu -->
+            <div class="w-full h-1 bg-spa-deep rounded-full overflow-hidden mb-8">
+                <div id="progress-bar" class="h-full bg-gradient-to-r from-spa-accent to-spa-accent-light transition-all duration-300 w-0"></div>
+            </div>
+
+            <!-- İnteraktif Spa Taşı -->
+            <div id="game-stage" class="flex-1 flex items-center justify-center py-6 w-full">
+                <button id="spa-stone" aria-label="Spa Taşına Dokunun" class="relative w-36 h-36 rounded-full bg-gradient-to-tr from-[#1E1048] via-[#3B1C80] to-[#7C3AED] shadow-[0_0_50px_rgba(124,58,237,0.3)] hover:shadow-[0_0_60px_rgba(124,58,237,0.5)] transition-all duration-300 flex items-center justify-center cursor-pointer outline-none select-none active:scale-95 touch-none">
+                    <!-- Ripple / Yayılma Efekti Halkası -->
+                    <span class="absolute inset-0 rounded-full border border-spa-accent-light/40 animate-ping opacity-0" id="stone-ripple"></span>
+                    
+                    <!-- Ortadaki Mistik Sembol (Lotus veya Çakra) -->
+                    <svg class="w-12 h-12 text-spa-cream/80 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Teşvik Mesajı -->
+            <p id="game-hint" class="text-xs text-spa-muted mt-6 font-light italic transition-opacity duration-300">
+                Başlamak için mistik taşa dokunun...
+            </p>
+
+            <!-- Kazanılan Ödül Kartı -->
+            <div id="reward-card" class="absolute inset-0 bg-spa-darker/95 backdrop-blur-md flex flex-col justify-center items-center p-6 text-center opacity-0 pointer-events-none transition-all duration-500 scale-95 z-10">
+                <div class="w-16 h-16 bg-spa-accent/20 rounded-full flex items-center justify-center text-spa-accent-light mb-4 border border-spa-accent/30 animate-bounce">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-serif text-white mb-2">Tebrikler, Zihniniz Arındı!</h3>
+                <p class="text-xs text-spa-muted mb-6 font-light max-w-xs">20 meditasyon adımını tamamlayarak ilk ziyaretinize özel %10 indirim kazandınız.</p>
+                
+                <!-- Kod Kartı -->
+                <div class="bg-spa-dark border border-spa-accent/30 rounded-lg p-4 w-full mb-6 flex justify-between items-center shadow-inner">
+                    <div class="text-left font-sans">
+                        <span class="text-[10px] tracking-widest uppercase text-spa-muted block mb-1">İndirim Kodu</span>
+                        <span class="text-lg font-mono font-bold tracking-wider text-spa-accent-light select-all">SURMELI10</span>
+                    </div>
+                    <button id="copy-btn" class="bg-spa-deep hover:bg-spa-accent text-spa-cream text-xs font-semibold px-4 py-2 rounded-md transition-colors border border-spa-accent/30 focus:outline-none">Kodu Kopyala</button>
+                </div>
+
+                <!-- Aksiyon Butonları -->
+                <div class="flex gap-3 w-full">
+                    <button id="play-again" class="flex-1 border border-spa-accent/30 hover:bg-spa-accent/10 text-spa-cream text-xs tracking-wider uppercase font-semibold py-3 rounded-lg transition-colors">Yeniden Oyna</button>
+                    <a href="https://wa.me/905305153770?text=Merhaba!%20Oyun%20Oyna%20%26%20%C4%B0ndirim%20Kazan%20oyunundan%20%2510%20indirim%20kazand%C4%B1m.%20SURMELI10%20kodu%20ile%20randevu%20almak%20istiyorum." target="_blank" class="flex-1 bg-spa-accent hover:bg-spa-accent-light text-white text-xs tracking-wider uppercase font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-lg">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Randevu Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Lokasyon -->
 <section id="lokasyon" class="py-32 bg-spa-darker border-t border-spa-deep/30">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -442,6 +531,160 @@ const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobile-menu');
 hamburger.addEventListener('click',()=>{mobileMenu.classList.toggle('hidden')});
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.add('hidden')));
+
+// Interactive Spa Stone Game Logic
+(function() {
+    let clicks = 0;
+    const maxClicks = 20;
+    const stone = document.getElementById('spa-stone');
+    const ripple = document.getElementById('stone-ripple');
+    const countDisplay = document.getElementById('click-count');
+    const progressBar = document.getElementById('progress-bar');
+    const rewardCard = document.getElementById('reward-card');
+    const copyBtn = document.getElementById('copy-btn');
+    const playAgainBtn = document.getElementById('play-again');
+    const hintText = document.getElementById('game-hint');
+    
+    // Web Audio Chime Synthesizer
+    let audioCtx = null;
+    const playChime = () => {
+        try {
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            if (!audioCtx) {
+                audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            
+            const freqs = [523.25, 659.25, 783.99, 987.77]; // C5, E5, G5, B5 soft chord
+            const now = audioCtx.currentTime;
+            
+            freqs.forEach((freq, index) => {
+                const osc = audioCtx.createOscillator();
+                const gainNode = audioCtx.createGain();
+                
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, now);
+                
+                // Soothing ambient bell envelope
+                gainNode.gain.setValueAtTime(0, now);
+                gainNode.gain.linearRampToValueAtTime(0.08 / freqs.length, now + 0.05 + index * 0.02);
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, now + 1.5 + index * 0.1);
+                
+                osc.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
+                
+                osc.start(now);
+                osc.stop(now + 2.0);
+            });
+        } catch (e) {
+            console.log("Audio feedback error or policy block:", e);
+        }
+    };
+    
+    const handleInteraction = (e) => {
+        if (e) {
+            e.preventDefault();
+        }
+        if (clicks >= maxClicks) return;
+        
+        clicks++;
+        
+        // Update display
+        countDisplay.textContent = `${clicks} / ${maxClicks}`;
+        progressBar.style.width = `${(clicks / maxClicks) * 100}%`;
+        
+        // Play peaceful sound
+        playChime();
+        
+        // Trigger animations
+        stone.classList.remove('animate-pulse-stone', 'animate-shake-stone');
+        void stone.offsetWidth; // Trigger reflow
+        
+        // Alternate pulse and shake for massage feel
+        if (clicks % 2 === 0) {
+            stone.classList.add('animate-pulse-stone');
+        } else {
+            stone.classList.add('animate-shake-stone');
+        }
+        
+        // Ripple effect
+        ripple.classList.remove('animate-ping', 'opacity-100');
+        void ripple.offsetWidth;
+        ripple.classList.add('animate-ping', 'opacity-100');
+        
+        // Status message
+        if (clicks < 5) {
+            hintText.textContent = "Dokunmaya devam edin, zihniniz arınıyor...";
+        } else if (clicks < 12) {
+            hintText.textContent = "Derin bir nefes alın, omuzlarınız gevşiyor...";
+        } else if (clicks < 18) {
+            hintText.textContent = "Negatif enerjiden tamamen uzaklaşıyorsunuz...";
+        } else {
+            hintText.textContent = "Son birkaç adım... Huzur çok yakın.";
+        }
+        
+        if (clicks === maxClicks) {
+            setTimeout(showReward, 500);
+        }
+    };
+
+    // Fast responsive events
+    stone.addEventListener('pointerdown', handleInteraction);
+    
+    const showReward = () => {
+        rewardCard.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+        rewardCard.classList.add('opacity-100', 'scale-100');
+    };
+    
+    // Reset Game
+    const resetGame = () => {
+        clicks = 0;
+        countDisplay.textContent = `0 / ${maxClicks}`;
+        progressBar.style.width = '0%';
+        hintText.textContent = "Başlamak için mistik taşa dokunun...";
+        rewardCard.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+        rewardCard.classList.remove('opacity-100', 'scale-100');
+        copyBtn.textContent = 'Kodu Kopyala';
+        copyBtn.className = 'bg-spa-deep hover:bg-spa-accent text-spa-cream text-xs font-semibold px-4 py-2 rounded-md transition-colors border border-spa-accent/30 focus:outline-none';
+    };
+    
+    playAgainBtn.addEventListener('click', resetGame);
+    
+    // Copy Code function
+    copyBtn.addEventListener('click', () => {
+        const codeText = 'SURMELI10';
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(codeText).then(() => {
+                copyBtn.textContent = 'Kopyalandı! ✓';
+                copyBtn.className = 'bg-emerald-600 text-white text-xs font-semibold px-4 py-2 rounded-md transition-colors focus:outline-none';
+            }).catch(() => {
+                fallbackCopy(codeText);
+            });
+        } else {
+            fallbackCopy(codeText);
+        }
+    });
+    
+    const fallbackCopy = (text) => {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed'; // Avoid scrolling
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            copyBtn.textContent = 'Kopyalandı! ✓';
+            copyBtn.className = 'bg-emerald-600 text-white text-xs font-semibold px-4 py-2 rounded-md transition-colors focus:outline-none';
+        } catch (err) {
+            console.error('Fallback copy failed', err);
+        }
+        document.body.removeChild(textArea);
+    };
+})();
 </script>
 </body>
 </html>
