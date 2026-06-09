@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lavillaspamasaj.com/sitemap.xml
+Sitemap: https://www.sürmelispa.com/sitemap.xml
