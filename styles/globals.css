@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-bg {
+  background-image: url('/assets/images/hero-bg.webp');
+}
+
+.nav-scrolled {
+  background: rgba(11, 10, 31, 0.97) !important;
+  box-shadow: 0 2px 30px rgba(124, 58, 237, 0.12);
+}
+
+.service-img-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 10, 31, 0.9) 0%, rgba(11, 10, 31, 0) 50%);
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+@keyframes stonePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes stoneShake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-2px, 2px) rotate(-1deg); }
+  40% { transform: translate(2px, -2px) rotate(1deg); }
+  60% { transform: translate(-2px, -2px) rotate(-1deg); }
+  80% { transform: translate(2px, 2px) rotate(1deg); }
+}
+
+.animate-pulse-stone {
+  animation: stonePulse 0.3s ease-out;
+}
+
+.animate-shake-stone {
+  animation: stoneShake 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
