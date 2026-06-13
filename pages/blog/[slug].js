@@ -5,7 +5,15 @@ import path from 'path'
 
 export default function BlogPost({ post }) {
 
-  const handleWhatsappClick = () => {
+  
+  const handlePhoneClick = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18196965496/H7nRCIG-jr4cEPjQ_uRD'
+      });
+    }
+  };
+const handleWhatsappClick = () => {
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'conversion', {
         'send_to': 'AW-18196965496/lGC5CJuxib4cEPjQ_uRD'
@@ -81,7 +89,7 @@ export default function BlogPost({ post }) {
               </nav>
               <div className="hidden md:flex items-center gap-6">
                 <a
-                  href="tel:+905305153770"
+                  onClick={handlePhoneClick} href="tel:+905305153770"
                   className="flex items-center gap-2 text-spa-accent-light hover:text-white transition-colors border border-spa-accent/30 rounded-full px-6 py-2"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -110,7 +118,7 @@ export default function BlogPost({ post }) {
               <a href="/adana-masaj#lokasyon" onClick={() => setIsMobileMenuOpen(false)} className="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">Lokasyon</a>
               <a href="/adana-masaj#iletisim" onClick={() => setIsMobileMenuOpen(false)} className="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors">İletişim</a>
               <a href="/adana-masaj" onClick={() => setIsMobileMenuOpen(false)} className="text-sm tracking-widest uppercase font-medium hover:text-spa-accent transition-colors text-spa-accent-light">Geri Dön</a>
-              <a href="tel:+905305153770" className="text-spa-accent-light text-sm tracking-widest mt-4">0530 515 37 70</a>
+              <a onClick={handlePhoneClick} href="tel:+905305153770" className="text-spa-accent-light text-sm tracking-widest mt-4">0530 515 37 70</a>
             </div>
           </div>
         </header>
@@ -160,7 +168,7 @@ export default function BlogPost({ post }) {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto shrink-0 justify-center">
                   <a
-                    href="tel:+905305153770"
+                    onClick={handlePhoneClick} href="tel:+905305153770"
                     className="bg-transparent hover:bg-white/10 text-white px-8 py-4 text-sm tracking-widest uppercase rounded-full transition-all duration-300 border border-white/30 text-center"
                   >
                     Hemen Ara
@@ -184,7 +192,7 @@ export default function BlogPost({ post }) {
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-2xl font-bold text-spa-accent-light uppercase tracking-[.2em] font-serif mb-4">Sürmeli Spa</h2>
             <p className="text-spa-muted mb-8 text-sm font-light">Kuruköprü, Sefa Özler Cd. No:49, 01060, 01130 Seyhan/Adana</p>
-            <a href="tel:+905305153770" className="text-spa-cream text-3xl font-serif hover:text-spa-accent transition-colors block mb-12">+90 530 515 37 70</a>
+            <a onClick={handlePhoneClick} href="tel:+905305153770" className="text-spa-cream text-3xl font-serif hover:text-spa-accent transition-colors block mb-12">+90 530 515 37 70</a>
             <div className="pt-8 border-t border-white/5 text-sm text-spa-muted/60 tracking-widest uppercase font-light">
               &copy; 2026 Sürmeli Spa. Tüm hakları saklıdır.
             </div>
@@ -205,7 +213,7 @@ export default function BlogPost({ post }) {
             </svg>
           </a>
           <a
-            href="tel:+905305153770"
+            onClick={handlePhoneClick} href="tel:+905305153770"
             className="w-14 h-14 bg-spa-deep border border-spa-accent/50 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-spa-accent transition-all"
             aria-label="Hemen Ara"
           >
