@@ -4,6 +4,14 @@ import fs from 'fs'
 import path from 'path'
 
 export default function BlogPost({ post }) {
+
+  const handleWhatsappClick = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18196965496/lGC5CJuxib4cEPjQ_uRD'
+      });
+    }
+  };
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -158,7 +166,7 @@ export default function BlogPost({ post }) {
                     Hemen Ara
                   </a>
                   <a
-                    href="https://wa.me/905305153770?text=Merhaba!%20Blog%20yaz%C4%B1n%C4%B1z%C4%B1%20okudum.%20Masaj%20seans%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum."
+                    onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba!%20Blog%20yaz%C4%B1n%C4%B1z%C4%B1%20okudum.%20Masaj%20seans%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-spa-accent hover:bg-spa-accent-light text-white px-8 py-4 text-sm tracking-widest uppercase rounded-full transition-all duration-300 shadow-lg text-center"
@@ -186,7 +194,7 @@ export default function BlogPost({ post }) {
         {/* Floating Action Buttons */}
         <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
           <a
-            href="https://wa.me/905305153770"
+            onClick={handleWhatsappClick} href="https://wa.me/905305153770"
             target="_blank"
             rel="noopener noreferrer"
             className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"

@@ -2,6 +2,14 @@ import Head from 'next/head'
 import { useState, useEffect, useRef } from 'react'
 
 export default function AdanaMasaj() {
+
+  const handleWhatsappClick = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18196965496/lGC5CJuxib4cEPjQ_uRD'
+      });
+    }
+  };
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -449,7 +457,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">2500 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Klasik%20Masaj%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Klasik%20Masaj%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -467,7 +475,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">3200 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Medical%20Masaj%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Medical%20Masaj%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -485,7 +493,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">3000 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Aroma%20Terapi%20Masajı%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Aroma%20Terapi%20Masajı%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -503,7 +511,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">4500 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Mix%20Masajı%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Mix%20Masajı%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -521,7 +529,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">3500 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Geleneksel%20Bali%20Masajı%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Geleneksel%20Bali%20Masajı%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -539,7 +547,7 @@ export default function AdanaMasaj() {
                       <div className="flex items-center gap-4 justify-between sm:justify-end">
                         <span className="text-xl font-bold text-spa-accent-light">5000 ₺</span>
                         <a
-                          href="https://wa.me/905305153770?text=Merhaba,%20Mandara%20Sultan%20Masajı%20için%20randevu%20almak%20istiyorum."
+                          onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba,%20Mandara%20Sultan%20Masajı%20için%20randevu%20almak%20istiyorum."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-spa-deep hover:bg-spa-accent text-white border border-spa-accent/30 hover:border-transparent px-5 py-2 text-xs tracking-wider uppercase rounded-full transition-all duration-300 font-medium whitespace-nowrap shadow-md hover:shadow-lg"
@@ -589,7 +597,7 @@ export default function AdanaMasaj() {
                   </ul>
 
                   <a
-                    href="https://wa.me/905305153770?text=Merhaba!%20VIP%20Masaj%20Paketi%20hakkında%20bilgi%20alabilir%20miyim?"
+                    onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba!%20VIP%20Masaj%20Paketi%20hakkında%20bilgi%20alabilir%20miyim?"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center bg-spa-accent hover:bg-spa-accent-light text-white font-medium py-3 rounded-lg transition-colors text-sm tracking-wider uppercase"
@@ -603,7 +611,7 @@ export default function AdanaMasaj() {
                   <p className="text-spa-accent-light font-medium text-2xl mb-4">10000 ₺</p>
                   <p className="text-xs text-spa-muted leading-relaxed mb-6">VIP paket içeriğine ek olarak, geleneksel Türk hamamında köpük masajı seansını da içeren en kapsamlı deneyimimiz.</p>
                   <a
-                    href="https://wa.me/905305153770?text=Merhaba!%20VIP%20masaj%20paketi%20%2B%20köpük%20masajı%20paketi%20hakkında%20bilgi%20almak%20istiyorum."
+                    onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba!%20VIP%20masaj%20paketi%20%2B%20köpük%20masajı%20paketi%20hakkında%20bilgi%20almak%20istiyorum."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center border border-spa-accent text-spa-accent-light hover:bg-spa-accent/10 font-medium py-2.5 rounded-lg transition-colors text-xs tracking-wider uppercase"
@@ -719,7 +727,7 @@ export default function AdanaMasaj() {
                     Yeniden Oyna
                   </button>
                   <a
-                    href="https://wa.me/905305153770?text=Merhaba!%20Oyun%20Oyna%20%26%20%C4%B0ndirim%20Kazan%20oyunundan%20%2510%20indirim%20kazand%C4%B1m.%20SURMELI10%20kodu%20ile%20randevu%20almak%20istiyorum."
+                    onClick={handleWhatsappClick} href="https://wa.me/905305153770?text=Merhaba!%20Oyun%20Oyna%20%26%20%C4%B0ndirim%20Kazan%20oyunundan%20%2510%20indirim%20kazand%C4%B1m.%20SURMELI10%20kodu%20ile%20randevu%20almak%20istiyorum."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-spa-accent hover:bg-spa-accent-light text-white text-xs tracking-wider uppercase font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-lg"
@@ -784,7 +792,7 @@ export default function AdanaMasaj() {
                 <div className="mt-12 flex flex-col sm:flex-row gap-4">
                   <a href="tel:+905305153770" className="bg-spa-deep hover:bg-spa-accent text-white px-8 py-4 text-sm tracking-widest uppercase rounded-sm transition-all duration-300 text-center flex-1">Hemen Ara</a>
                   <a
-                    href="https://wa.me/905305153770"
+                    onClick={handleWhatsappClick} href="https://wa.me/905305153770"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-spa-accent text-spa-accent-light hover:bg-spa-accent/10 px-8 py-4 text-sm tracking-widest uppercase rounded-sm transition-all duration-300 text-center flex-1 flex justify-center items-center gap-2"
@@ -827,7 +835,7 @@ export default function AdanaMasaj() {
         {/* Floating Action Buttons */}
         <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
           <a
-            href="https://wa.me/905305153770"
+            onClick={handleWhatsappClick} href="https://wa.me/905305153770"
             target="_blank"
             rel="noopener noreferrer"
             className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
