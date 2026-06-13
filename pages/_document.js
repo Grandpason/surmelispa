@@ -13,17 +13,6 @@ export default function Document() {
           })(window,document,'script','dataLayer','GTM-54G2BZFQ');`
         }} />
         {/* End Google Tag Manager */}
-        {/* Google tag (gtag.js) - Google Ads */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18196965496"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'AW-18196965496');
-          `
-        }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
