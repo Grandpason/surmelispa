@@ -101,6 +101,130 @@ export default function AdanaMasaj() {
               </Link>
             </div>
           </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 z-20">
+            <span className="text-spa-accent-light text-[10px] tracking-[0.25em] uppercase font-semibold opacity-80">İç Mekan İçin Kaydırın</span>
+            <div className="animate-bounce mt-1">
+              <svg className="w-5 h-5 text-spa-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 13l-7 7-7-7m7 7V4"></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        {/* İç Mekan Galeri Section */}
+        <section id="ic-mekan" className="py-24 bg-spa-dark border-t border-spa-deep/30">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-20 fade-up">
+              <span className="text-spa-accent-light text-xs tracking-[.4em] uppercase font-semibold mb-6 block">Sürmeli Spa Deneyimi</span>
+              <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Huzur Dolu <span className="italic text-spa-accent-light">İç Mekanımız</span></h2>
+              <p className="text-spa-muted text-sm md:text-base max-w-xl mx-auto font-light">
+                Sizler için her detayı özenle tasarlanmış, dinlendirici ve hijyenik VIP salonlarımızdan görüntüler.
+              </p>
+            </div>
+
+            <div className="space-y-24">
+              {/* Image 3 */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/3.jpeg" alt="Sürmeli Spa İç Mekan 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 1</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Konforlu Dinlenme Alanı</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Masaj seansınız öncesi veya sonrasında bitki çayınızı yudumlayabileceğiniz, loş ışıklar ve dinlendirici müzik eşliğinde dekore edilmiş huzurlu bekleme alanımız.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 4 */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/4.jpeg" alt="Sürmeli Spa İç Mekan 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 2</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">VIP Masaj Odaları</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Tamamen size özel, hijyen standartlarının en üst seviyede tutulduğu, profesyonel masaj yatakları ve aromatik kokularla donatılmış kişisel terapi odalarımız.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 5 */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/5.jpeg" alt="Sürmeli Spa İç Mekan 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 3</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Terapötik Işık ve Atmosfer</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Zihninizi dış dünyanın karmaşasından arındırmak amacıyla tasarlanan soft aydınlatmalar, mum ışıkları ve sakinleştirici renk paletimizle ruhsal bir dinginliğe ulaşın.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 6 */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/6.jpeg" alt="Sürmeli Spa İç Mekan 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 4</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Lüks Jakuzi ve Terapi Odası</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    VIP paketlerimize dahil olan, sıcak suyun ve hidroterapi jetlerinin vücudunuzdaki tüm yorgunluğu alacağı konforlu jakuzi alanımız.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 7 */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/7.jpeg" alt="Sürmeli Spa İç Mekan 5" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 5</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Geleneksel Türk Hamamı</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Mermer sıcak taşın (göbek taşı) üzerinde kese ve köpük banyosu ritüelleriyle gözeneklerinizi açacak ve vücudunuzu toksinlerden arındıracak geleneksel hamam alanımız.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 8 */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/8.jpeg" alt="Sürmeli Spa İç Mekan 6" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 6</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Hijyen ve Detaylar</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Sürmeli Spa olarak sağlığınızı önemsiyoruz. Her terapi öncesi ve sonrası tamamen dezenfekte edilen odalarımızda kullanılan tüm tekstil ürünleri tek kullanımlıktır.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 9 */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
+                <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
+                  <img src="/assets/images/9.jpeg" alt="Sürmeli Spa İç Mekan 7" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 7</span>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Sosyal Alanlar ve Karşılama</h3>
+                  <p className="text-spa-cream/80 font-light leading-relaxed">
+                    Güler yüzlü ekibimizle sizi karşıladığımız, randevularınızın planlandığı ve ihtiyaçlarınıza göre en doğru masaj terapisini seçtiğimiz karşılama ve lobi alanımız.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </section>
     </PageLayout>
   )
