@@ -128,13 +128,13 @@ export default function AdanaMasaj() {
               {/* Image 3 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/3.jpeg" alt="Sürmeli Spa İç Mekan 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/3.jpeg" alt="Sürmeli Spa Yüzme Havuzu" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 1</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Konforlu Dinlenme Alanı</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Yüzme Havuzumuz</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    Masaj seansınız öncesi veya sonrasında bitki çayınızı yudumlayabileceğiniz, loş ışıklar ve dinlendirici müzik eşliğinde dekore edilmiş huzurlu bekleme alanımız.
+                    Seans öncesi veya sonrasında vücudunuzu dinlendirmek, kaslarınızı gevşetmek için kullanabileceğiniz huzurlu sıcak su havuzumuz.
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function AdanaMasaj() {
               {/* Image 4 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/4.jpeg" alt="Sürmeli Spa İç Mekan 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/4.jpeg" alt="Sürmeli Spa VIP Masaj Odaları" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 2</span>
@@ -156,13 +156,13 @@ export default function AdanaMasaj() {
               {/* Image 5 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/5.jpeg" alt="Sürmeli Spa İç Mekan 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/5.jpeg" alt="Sürmeli Spa Türk Hamamı" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 3</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Terapötik Işık ve Atmosfer</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Türk Hamamı</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    Zihninizi dış dünyanın karmaşasından arındırmak amacıyla tasarlanan soft aydınlatmalar, mum ışıkları ve sakinleştirici renk paletimizle ruhsal bir dinginliğe ulaşın.
+                    Geleneksel Türk hamamı kültürünü yaşatan mermer kaplama alanımızda, kese ve köpük masajı ritüelleri ile cildinizi tazeleyin, gözeneklerinizi açın ve toksinlerden tamamen arının.
                   </p>
                 </div>
               </div>
@@ -170,13 +170,13 @@ export default function AdanaMasaj() {
               {/* Image 6 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/6.jpeg" alt="Sürmeli Spa İç Mekan 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/6.jpeg" alt="Sürmeli Spa Konforlu Terapi Odası" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 4</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Lüks Jakuzi ve Terapi Odası</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Konforlu Terapi Odalarımız</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    VIP paketlerimize dahil olan, sıcak suyun ve hidroterapi jetlerinin vücudunuzdaki tüm yorgunluğu alacağı konforlu jakuzi alanımız.
+                    Genel standart odalarımızda yüksek konfor ve rahatlığı bir arada sunuyoruz. Her müşteri sonrası havlu ve çarşaflarımız günlük olarak yıkanıp sterilize edilerek maksimum hijyen sağlanmaktadır.
                   </p>
                 </div>
               </div>
@@ -184,13 +184,13 @@ export default function AdanaMasaj() {
               {/* Image 7 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/7.jpeg" alt="Sürmeli Spa İç Mekan 5" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/7.jpeg" alt="Sürmeli Spa Bar Köşesi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 5</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Geleneksel Türk Hamamı</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Bar Köşesi</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    Mermer sıcak taşın (göbek taşı) üzerinde kese ve köpük banyosu ritüelleriyle gözeneklerinizi açacak ve vücudunuzu toksinlerden arındıracak geleneksel hamam alanımız.
+                    Terapilerinizin öncesinde veya sonrasında sıcak ve soğuk özel ikramlarımızı alıp keyifle vakit geçirebileceğiniz lüks bar köşemiz.
                   </p>
                 </div>
               </div>
@@ -198,13 +198,13 @@ export default function AdanaMasaj() {
               {/* Image 8 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/8.jpeg" alt="Sürmeli Spa İç Mekan 6" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/8.jpeg" alt="Sürmeli Spa Resepsiyon" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 6</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Hijyen ve Detaylar</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">Resepsiyon</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    Sürmeli Spa olarak sağlığınızı önemsiyoruz. Her terapi öncesi ve sonrası tamamen dezenfekte edilen odalarımızda kullanılan tüm tekstil ürünleri tek kullanımlıktır.
+                    Güler yüzlü ekibimizle sizi karşıladığımız, randevularınızı organize ettiğimiz ve spa deneyiminiz başlamadan önce size rehberlik ettiğimiz şık karşılama alanımız.
                   </p>
                 </div>
               </div>
@@ -212,13 +212,13 @@ export default function AdanaMasaj() {
               {/* Image 9 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/9.jpeg" alt="Sürmeli Spa İç Mekan 7" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/9.jpeg" alt="Sürmeli Spa VIP Spa Terapi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 7</span>
-                  <h3 className="text-2xl md:text-3xl font-serif text-white">Sosyal Alanlar ve Karşılama</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-white">VIP Spa & Terapi</h3>
                   <p className="text-spa-cream/80 font-light leading-relaxed">
-                    Güler yüzlü ekibimizle sizi karşıladığımız, randevularınızın planlandığı ve ihtiyaçlarınıza göre en doğru masaj terapisini seçtiğimiz karşılama ve lobi alanımız.
+                    Özellikle sporcuların antrenman sonrası ter atma ve kas dinlendirme dönemleri için ideal, vücudu yenileyen ve rejenerasyonu hızlandıran özel spa seanslarımız.
                   </p>
                 </div>
               </div>
