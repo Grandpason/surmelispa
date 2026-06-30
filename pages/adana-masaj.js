@@ -128,7 +128,7 @@ export default function AdanaMasaj() {
               {/* Image 3 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/3.jpeg" alt="Sürmeli Spa Yüzme Havuzu" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/3.webp" alt="Sürmeli Spa Yüzme Havuzu" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 1</span>
@@ -142,7 +142,7 @@ export default function AdanaMasaj() {
               {/* Image 4 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/4.jpeg" alt="Sürmeli Spa VIP Masaj Odaları" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/4.webp" alt="Sürmeli Spa VIP Masaj Odaları" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 2</span>
@@ -156,7 +156,7 @@ export default function AdanaMasaj() {
               {/* Image 5 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/5.jpeg" alt="Sürmeli Spa Türk Hamamı" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/5.webp" alt="Sürmeli Spa Türk Hamamı" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 3</span>
@@ -170,7 +170,7 @@ export default function AdanaMasaj() {
               {/* Image 6 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/6.jpeg" alt="Sürmeli Spa Konforlu Terapi Odası" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/6.webp" alt="Sürmeli Spa Konforlu Terapi Odası" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 4</span>
@@ -184,7 +184,7 @@ export default function AdanaMasaj() {
               {/* Image 7 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/7.jpeg" alt="Sürmeli Spa Bar Köşesi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/7.webp" alt="Sürmeli Spa Bar Köşesi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 5</span>
@@ -198,7 +198,7 @@ export default function AdanaMasaj() {
               {/* Image 8 */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/8.jpeg" alt="Sürmeli Spa Resepsiyon" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/8.webp" alt="Sürmeli Spa Resepsiyon" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 6</span>
@@ -212,7 +212,7 @@ export default function AdanaMasaj() {
               {/* Image 9 */}
               <div className="flex flex-col lg:flex-row items-center gap-12 fade-up">
                 <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-spa-accent/15 shadow-2xl aspect-[16/10]">
-                  <img src="/assets/images/9.jpeg" alt="Sürmeli Spa VIP Spa Terapi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/assets/images/9.webp" alt="Sürmeli Spa VIP Spa Terapi" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="w-full lg:w-1/2 space-y-6">
                   <span className="text-spa-accent-light text-xs tracking-widest uppercase font-semibold">Görsel 7</span>
