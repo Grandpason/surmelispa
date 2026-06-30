@@ -326,7 +326,7 @@ const handleWhatsappClick = () => {
           <div className="relative z-10 max-w-4xl mx-auto px-4 mt-20">
             <span className="text-spa-accent-light text-xs tracking-[.4em] uppercase font-semibold mb-6 block fade-up">Adana'nın Huzur Adresi</span>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight font-serif fade-up drop-shadow-2xl">
-              Bedene huzur,<br /><span className="text-spa-accent-light italic">ruha sükûnet.</span>
+              Adana Masaj Salonu &<br /><span className="text-spa-accent-light italic">VIP Spa Merkezi</span>
             </h1>
             <p className="text-lg md:text-xl text-spa-cream/80 mb-12 max-w-2xl mx-auto leading-relaxed fade-up font-light">
               Adana'nın kalbinde, profesyonel masaj terapileri ile bedeninizi ve ruhunuzu yenileyecek bir kaçış noktası.
@@ -353,7 +353,7 @@ const handleWhatsappClick = () => {
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-end mb-20 fade-up">
               <div className="max-w-2xl">
-                <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">Her dokunuş, <span className="italic text-spa-accent-light">bir sanat.</span></h2>
+                <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">Adana Masaj Salonumuzda bulunan <span className="italic text-spa-accent-light">hizmetler</span></h2>
               </div>
               <p className="text-spa-muted text-lg max-w-md mt-6 md:mt-0 font-light">
                 Geleneksel Türk hamamından Uzakdoğu tekniklerine; bedeninizi ve ruhunuzu yenileyecek titizlikle seçilmiş bir menü sunuyoruz.
